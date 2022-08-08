@@ -41,7 +41,7 @@ export default ({ strapi }) => ({
 						});
 						const response = await axios.post(
 							host === '0.0.0.0'
-								? `http://localhost:${port}api/upload`
+								? `http://localhost:${port}/api/upload`
 								: url,
 							formData
 						);
